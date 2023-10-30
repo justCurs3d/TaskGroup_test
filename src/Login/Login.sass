@@ -1,0 +1,77 @@
+
+.login__wrapper
+    background: #FFFFFF
+    border: 1px solid #C9DEE8
+    border-radius: 5px
+    width: 100%
+    max-width: 600px
+    height: 450px
+    padding: 20px
+    padding-top: 60px
+    padding-bottom: 60px
+    margin: 100px auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    letter-spacing: 0.03em
+
+    .login__form
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        height: 100%
+        width: 350px
+
+        .login__form__input
+            border: 1px solid #C9DEE8
+            background-color: #F6FAFC
+            padding: 15px
+            width: 100%
+            font-family: 'Ubuntu', sans-serif
+            font-size: 18px
+
+            &::placeholder
+                color: lighten(#646464, 20%)
+
+        .error
+            background-color: lighten(red, 40%)
+            border: 1px solid red
+
+        label
+            text-transform: uppercase
+            display: block
+            margin-bottom: 10px
+            opacity: 0.6
+            font-size: 13px
+
+        .login__form__btn
+            width: 100%
+            font-family: 'Ubuntu', sans-serif
+            background-color: #18A6F5
+            height: 60px
+            padding: 0 32px
+            font-size: 14px
+            font-family: 'Ubuntu', sans-serif
+            font-weight: 500
+            border-radius: 4px
+            letter-spacing: 0.03em
+            text-transform: uppercase
+            margin-top: 50px
+
+        .login__form__forget
+            margin-left: auto
+            margin-right: auto
+            width: fit-content
+            text-align: center
+            text-transform: uppercase
+            margin-top: 20px
+            color: #18A6F5
+            font-size: 14px
+
+            font-weight: 500
+            cursor: pointer
+            transition: color .3s
+
+            &:hover
+                color: #000

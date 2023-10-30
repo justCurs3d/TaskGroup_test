@@ -1,0 +1,85 @@
+.basketWrapper
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.4)
+    width: 100%
+    z-index: 1
+
+    .basket
+        background-color: #fff
+        width: 420px
+        height: 100vh
+        float: right
+        box-sizing: border-box
+        box-shadow: -10px 4px 24px 0px #0000003A
+        padding: 30px
+        padding-top: 0px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        >h2
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 30px
+
+            >img
+                cursor: pointer
+
+        .cardList
+            flex: 1
+            overflow: auto
+            
+
+            
+
+    .basketCard
+        border: 1px solid #F3F3F3
+        border-radius: 20px
+        display: flex
+        align-items: center
+        padding: 20px
+        box-sizing: border-box
+        height: 120px
+        width: 340px
+
+    .delete
+        transform: scale(1.8)
+
+    .submit
+        font-size: 16px
+        color: #fff
+        background-color: #90d458
+        border: 2px solid #FFFFFF
+        width: 340px
+        border-radius: 18px
+        cursor: pointer
+
+        &:hover
+            background-color: lighten(#90d458 , 4%)
+            .btnImg
+                transform: translateX(10px)
+
+        .btnImg
+            float: right
+            transition: 0.4s
+
+.emptyBasket
+    text-align: center
+    text-wrap: balance
+
+.basketDown
+    width: 340px
+
+    .basketTotal
+        padding: 0
+        li
+            margin-bottom: 15px
+        div
+            flex: 1
+            height: 1px
+            border-bottom: 1px dashed #AFAFAF
+            align-self: flex-end
+            margin: 0px 5px 5px 5px
